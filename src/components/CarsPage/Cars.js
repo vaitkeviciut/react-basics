@@ -73,12 +73,8 @@ function Cars() {
         return basePrice / 100 * discount;
     }
     
-    const getAllPrice = () => {
-      console.log(car)
-     return car.price.basePrice + car.price.enginePrice + car.price.colorPrice;
-      
-    }
-    const getAllDiscount = () => car.price.mileageDiscount + car.price.manualDiscount;
+    const getAllPrice = () => basePrice + getEnginePrice() + getColorPrice();
+    const getAllDiscount = () => getMileageDiscount() + getManualDiscount();
     const getTotalPrice = () => getAllPrice() - getAllDiscount();
     const getVAT = () => getTotalPrice() * 0.21;
     const getFinalPrice = () => getTotalPrice() + getVAT();
@@ -102,7 +98,7 @@ function Cars() {
                 mileageDiscount: getMileageDiscount(),
                 manualDiscount: getManualDiscount(),
                 vat: getVAT(),
-                finalPrice: getFinalPrice(basePrice),
+                finalPrice: getFinalPrice(),
             }
         });
     }

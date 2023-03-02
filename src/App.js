@@ -6,6 +6,9 @@ import NewsPage from './components/NewsPage/NewsPage';
 import Contacts from './components/Contacts/Contacts';
 import Counter from './components/CounterPage/Counter';
 import Cars from './components/CarsPage/Cars';
+import DarkModePage from './components/DarkModePage/DarkModePage';
+import ShoppingListPage from './components/ShoppingListPage/ShoppingListPage';
+import ShoppingListItem from './components/ShoppingListPage/ShoppingListItem';
 
 import './App.css';
 
@@ -22,19 +25,28 @@ function App() {
             <Link to='/contacts'>Contacts - Project</Link>
           </li>
           <li>
-            <Link to='/counter'>Counter Page</Link>
+            <Link to='/counter'>Grader</Link>
           </li>
           <li>
-            <Link to='/cars'>Cars Page</Link>
+            <Link to='/cars'>Cars Form</Link>
+          </li>
+          <li>
+            <Link to='/darkmode'>Dark/Light Mode</Link>
+          </li>
+          <li>
+            <Link to='/shoppinglistpage'>Shopping List</Link>
           </li>
         </ul>
       } />
         <Route path='/codeacademy' element={<MainPage />} />
         <Route path='/codeacademy/news' element={<NewsPage />} />
         <Route path='/codeacademy/programs' element={<ProgramsPage />} />
-        <Route path='/contacts/' element={<Contacts />} />
+        <Route path='/contacts' element={<Contacts />} />
         <Route path='/counter' element={<Counter />} />
         <Route path='/cars' element={<Cars />} />
+        <Route path='/darkmode' element={<DarkModePage />} />
+        <Route path='/shoppinglistpage' element={<ShoppingListPage />} />
+        <Route path='/shoppinglistpage/item' element={<ShoppingListItem />} />
         <Route path='*' element={
           <div>
             <h1>404 error. Page not found</h1>
