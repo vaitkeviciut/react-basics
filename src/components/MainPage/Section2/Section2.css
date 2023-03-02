@@ -1,0 +1,106 @@
+.main-content-container .main-content-2-container {
+    background-color: #0f02b7;
+    background-image: url(../../images/decoration-arrows-1.svg);
+    background-repeat: no-repeat;
+    background-size: 850px;
+    background-position: -5% -10%;
+    position: relative;
+  }
+  @media (max-width: 1719px) {
+    .main-content-container .main-content-2-container {
+      background-size: 700px;
+      background-position: 5% 10%;
+    }
+  }
+  @media (max-width: 1589px) {
+    .main-content-container .main-content-2-container {
+      background-size: 650px;
+      background-position: 10% 30%;
+    }
+  }
+  @media (max-width: 1499px) {
+    .main-content-container .main-content-2-container {
+      background-size: 600px;
+      background-position: 10% 60%;
+    }
+  }
+  @media (max-width: 1389px) {
+    .main-content-container .main-content-2-container {
+      background-size: 700px;
+      background-position: 30% -70%;
+    }
+  }
+  @media (max-width: 959px) {
+    .main-content-container .main-content-2-container {
+      background-size: 600px;
+      background-position: 30% 100%;
+    }
+  }
+  @media (max-width: 739px) {
+    .main-content-container .main-content-2-container {
+      background-size: 570px;
+      background-position: 30% 100%;
+    }
+  }
+  @media (max-width: 679px) {
+    .main-content-container .main-content-2-container {
+      background-size: 570px;
+      background-position: 30% 150%;
+    }
+  }
+  @media (max-width: 569px) {
+    .main-content-container .main-content-2-container {
+      background-size: 520px;
+      background-position: 30% 150%;
+    }
+  }
+  @media (max-width: 459px) {
+    .main-content-container .main-content-2-container {
+      background-size: 470px;
+      background-position: 30% 80%;
+    }
+  }
+  @media (max-width: 409px) {
+    .main-content-container .main-content-2-container {
+      background-size: 450px;
+      background-position: 30% 80%;
+    }
+  }
+  @media (max-width: 369px) {
+    .main-content-container .main-content-2-container {
+      background-size: 430px;
+      background-position: 60% 80%;
+    }
+  }
+  @media (max-width: 309px) {
+    .main-content-container .main-content-2-container {
+      background-size: 400px;
+      background-position: 60% 80%;
+    }
+  }
+  .main-content-container .main-content-2-container img {
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+  }
+  @media (max-width: 1719px) {
+    .main-content-container .main-content-2-container img {
+      width: 800px;
+    }
+  }
+  @media (max-width: 1589px) {
+    .main-content-container .main-content-2-container img {
+      width: 700px;
+    }
+  }
+  @media (max-width: 1499px) {
+    .main-content-container .main-content-2-container img {
+      width: 650px;
+    }
+  }
+  @media (max-width: 1389px) {
+    .main-content-container .main-content-2-container img {
+      display: none;
+    }
+  }
+  

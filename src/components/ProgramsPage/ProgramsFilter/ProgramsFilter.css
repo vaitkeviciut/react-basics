@@ -1,0 +1,92 @@
+.filters-wrapper {
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 620px;
+    position: sticky;
+    top: 113px;
+}
+.wrapper-header {
+    font-family: Bw Gradual,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 0;
+}
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.heavy {
+    font-family: Bw Nista Int,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+}
+
+.button-select {
+    background-color: rgb(236, 233, 233);
+    padding: 15px 20px;
+    border: 1px solid rgb(236, 233, 233);
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-family:  Nista Int,Arial,sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.button-select:hover {
+    background-color: rgb(195, 195, 195);
+    border: 1px solid rgb(207, 207, 207);
+}
+
+.button-select:active {
+    box-shadow: 0 0 7px 2px rgb(66, 66, 248);
+}
+
+.time-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.laikas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+}
+
+.day, 
+.night {
+    display: flex;
+    column-gap: 10px;
+}
+.light {
+    font-family: Bw Nista Int,Arial,sans-serif;
+    font-size: 17px;
+}
+
+.button-blue {
+    text-transform: uppercase;
+    font-family: Nista Int,Arial,sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+    border: 2px solid blue;
+    border-radius: 40px;
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+
+.button-blue:hover {
+    border: 2px solid rgb(91, 91, 252);
+    color: rgb(91, 91, 252);
+}

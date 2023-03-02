@@ -1,0 +1,6 @@
+.main-content-container {
+  font-family: Bw Nista Int, Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}  

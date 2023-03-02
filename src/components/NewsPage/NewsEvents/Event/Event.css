@@ -1,0 +1,60 @@
+.renginiai-link {
+    background-color: black;
+    padding: 50px 20px 20px 20px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+
+}
+
+.main-text {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Bw Nista Int, Arial ,sans-serif;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.help-text {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: Bw Nista Int, Arial ,sans-serif;
+    margin-bottom: 0;
+}
+
+.renginiai-data-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    position: absolute;
+    bottom: calc(100% - 40px);
+}
+
+.renginiai-data-diena {
+    font-family: Bw Gradual,Arial,sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px 10px 0 0;
+    padding: 6px 0px 6px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.renginiai-data-men {
+    font-family: Bw Gradual,Arial,sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #ff00e9;
+    border: 1px solid #ff00e9;
+    border-radius: 0 0 10px 10px;
+    padding: 6px 0 6px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,19 @@
+.video-header {
+    font-size: 42px;
+    font-family: "Bw Gradual", Arial, sans-serif;
+    font-weight: 700;
+}
+
+.video-wrapper {
+    width: 100%;
+}
+
+.video {
+    object-fit: cover;
+}
+
+.video-comment {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}

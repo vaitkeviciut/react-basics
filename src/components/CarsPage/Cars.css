@@ -1,0 +1,16 @@
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.cars-label {
+    font-size: 16px;
+    margin: 3px 15px 3px 5px;
+}
+
+.cars-input {
+    padding: 5px;
+    border: none;
+    font-size: 15px;
+}

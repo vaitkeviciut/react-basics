@@ -1,0 +1,91 @@
+.main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  @media (max-width: 409px) {
+    .main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item {
+      gap: 10px;
+    }
+  }
+  @media (max-width: 369px) {
+    .main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item {
+      gap: 10px;
+    }
+  }
+  @media (max-width: 349px) {
+    .main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item {
+      gap: 10px;
+    }
+  }
+  .main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item .fact-list-value {
+    font-size: 100px;
+    font-family: Bw Gradual, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.14;
+  }
+  @media (max-width: 959px) {
+    .main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item .fact-list-value {
+      font-size: 80px;
+    }
+  }
+  @media (max-width: 679px) {
+    .main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item .fact-list-value {
+      font-size: 70px;
+    }
+  }
+  @media (max-width: 569px) {
+    .main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item .fact-list-value {
+      font-size: 60px;
+    }
+  }
+  @media (max-width: 459px) {
+    .main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item .fact-list-value {
+      font-size: 55px;
+    }
+  }
+  @media (max-width: 349px) {
+    .main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item .fact-list-value {
+      font-size: 45px;
+    }
+  }
+  .main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item .small {
+    font-size: 72px;
+  }
+  @media (max-width: 959px) {
+    .main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item .small {
+      font-size: 55px;
+    }
+  }
+  @media (max-width: 739px) {
+    .main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item .small {
+      font-size: 48px;
+    }
+  }
+  @media (max-width: 679px) {
+    .main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item .small {
+      font-size: 45px;
+    }
+  }
+  @media (max-width: 569px) {
+    .main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item .small {
+      font-size: 40px;
+    }
+  }
+  @media (max-width: 459px) {
+    .main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item .small {
+      font-size: 40px;
+    }
+  }
+  @media (max-width: 349px) {
+    .main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item .small {
+      font-size: 30px;
+    }
+  }
+  .main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item .fact-list-description {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .main-content-container .main-content-1-container .main-content-1-wrapper .main-content-1-facts-wrapper .main-content-1-facts-list-wrapper .main-content-1-facts-list .main-content-1-facts-list-item:last-child {
+    justify-content: flex-end;
+  }

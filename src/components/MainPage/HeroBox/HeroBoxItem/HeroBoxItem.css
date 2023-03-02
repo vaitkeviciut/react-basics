@@ -1,0 +1,78 @@
+.main-content-container .hero-box-container .hero-box-wrapper .hero-box-service-wrapper .service-item {
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 50%;
+  }
+  @media (max-width: 1099px) {
+    .main-content-container .hero-box-container .hero-box-wrapper .hero-box-service-wrapper .service-item {
+      padding-left: 65px;
+      padding-right: 65px;
+    }
+  }
+  @media (max-width: 959px) {
+    .main-content-container .hero-box-container .hero-box-wrapper .hero-box-service-wrapper .service-item {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+  }
+  @media (max-width: 739px) {
+    .main-content-container .hero-box-container .hero-box-wrapper .hero-box-service-wrapper .service-item {
+      padding-left: 65px;
+      padding-right: 65px;
+      border-left: none;
+      width: 100%;
+    }
+  }
+  @media (max-width: 459px) {
+    .main-content-container .hero-box-container .hero-box-wrapper .hero-box-service-wrapper .service-item {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+  }
+  @media (max-width: 409px) {
+    .main-content-container .hero-box-container .hero-box-wrapper .hero-box-service-wrapper .service-item {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  @media (max-width: 309px) {
+    .main-content-container .hero-box-container .hero-box-wrapper .hero-box-service-wrapper .service-item {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  .main-content-container .hero-box-container .hero-box-wrapper .hero-box-service-wrapper .service-item .service-content-wrapper {
+    margin-bottom: 40px;
+  }
+  .main-content-container .hero-box-container .hero-box-wrapper .hero-box-service-wrapper .service-item .service-content-wrapper .service-title {
+    color: white;
+    font-size: 24px;
+  }
+  .main-content-container .hero-box-container .hero-box-wrapper .hero-box-service-wrapper .service-item .service-content-wrapper .service-text {
+    font-size: 14px;
+    line-height: 1.74;
+    color: white;
+  }
+  .main-content-container .hero-box-container .hero-box-wrapper .hero-box-service-wrapper .service-item .service-button {
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 13px 30px 11px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+  }
+  .main-content-container .hero-box-container .hero-box-wrapper .hero-box-service-wrapper .service-item .service-button:hover {
+    background-color: rgb(59, 59, 182);
+  }
+  .main-content-container .hero-box-container .hero-box-wrapper .hero-box-service-wrapper .border {
+    border-left: 1px solid white;
+  }
+  @media (max-width: 739px) {
+    .main-content-container .hero-box-container .hero-box-wrapper .hero-box-service-wrapper .border {
+      border: none;
+    }
+  }

@@ -1,0 +1,41 @@
+.play-juosta {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border: 1px solid;
+    height: calc(100% / 3 * 1.5);
+    width: 100%;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0;
+    font-size: 15px;
+    width: 100%;
+}
+
+.play {
+    padding: 20px 20px;
+    background-color: white;
+    margin: 0;
+    height: 100%;
+    display: flex;
+}
+
+.podcast-content {
+    padding: 20px 20px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.content {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 700;
+}

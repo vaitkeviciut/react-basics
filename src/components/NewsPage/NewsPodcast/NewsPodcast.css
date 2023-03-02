@@ -1,0 +1,8 @@
+.podcast-wrapper {
+    width: 100%;
+    font-family: Bw Nista Int, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+

@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(236, 233, 233);
+}
+
+.header-wrapper {
+    color: black;
+    font-size: 72px;
+    font-family: "Bw Gradual", Arial, sans-serif;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.main-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    margin-bottom: 60px;
+}

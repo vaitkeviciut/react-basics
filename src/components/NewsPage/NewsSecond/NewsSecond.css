@@ -1,0 +1,9 @@
+.secondary-news-wrapper {
+    font-family: Bw Nista Int, Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+

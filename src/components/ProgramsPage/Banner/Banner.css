@@ -1,0 +1,40 @@
+.image-container {
+    background-color: white;
+    background-image: url(../../images/MicrosoftTeams-image.png);
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: 90% 60%;
+    margin: 30px 0;
+}
+
+.image-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px;
+}
+
+.text {
+    display: flex;
+    gap: 10px;
+}
+
+.image-link {
+    text-decoration: none;
+    width: 100%;
+}
+
+.pink, 
+.black {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Bw Gradual,Arial,sans-serif;
+}
+
+.black {
+    color: black;
+}
+
+.pink {
+    color: #ff00e9;
+}

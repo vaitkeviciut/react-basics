@@ -1,0 +1,17 @@
+.all-news-link {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 33px 30px 33px 40px;
+    background-color: white;
+    display: block;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+}

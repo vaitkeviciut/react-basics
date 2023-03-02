@@ -1,0 +1,19 @@
+
+.menu-item {
+    list-style-type: none;
+    padding: 17px 20px;
+    background-color: white;
+    border: 1px solid;
+    border-color: rgb(236, 233, 233);
+}
+
+ul.menu {
+    padding-left: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul .menu-link {
+    text-decoration: none;
+    color: black;
+}

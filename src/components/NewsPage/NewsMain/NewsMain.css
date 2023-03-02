@@ -1,0 +1,7 @@
+.main-news-wrapper {
+    display: flex;
+    column-gap: 40px;
+    font-family: Bw Nista Int, Arial, sans-serif;
+    width: 100%;
+}
+

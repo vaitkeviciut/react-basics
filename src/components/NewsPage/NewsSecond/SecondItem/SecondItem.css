@@ -1,0 +1,42 @@
+.secondary-news {
+    width: calc(50% - 20px);
+}
+
+.secondary-news-link {
+    display: flex;
+    column-gap: 20px;
+}
+
+.secondary-news-link {
+    text-decoration: none;
+    color: black;
+}
+
+.secondary-news-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.secondary-news-header {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: blue;
+}
+
+.secondary-news-title {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.secondary-news-date, 
+.date {
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 12px;
+}
