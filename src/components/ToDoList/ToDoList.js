@@ -37,8 +37,8 @@ const ToDoList = () => {
     })
     }
 
-  return (
-    <div className='todo-content-wrapper'>
+    return (
+        <div className='todo-content-wrapper'>
             <form className='todo-list-form' onSubmit={submitHandler}>
                 <div className='todo-form-control-wrapper'>
                     <label className='todo-item-label' htmlFor='todo-item-input'>Action:</label>
@@ -53,12 +53,10 @@ const ToDoList = () => {
                     <input className='todo-submit-button' type="submit" />
                 </div>
             </form>
-
             <div className='todo-list-wrapper'>
             {actions && actions.length > 0 ? (
             <div>
                 <h2 className='todo-list-title'>To Do List:</h2>
-
                 <ul className='todo-list'>
                 {actions.map((item, index) => (
                     <li className='todo-list-item' key={index}>
@@ -74,7 +72,7 @@ const ToDoList = () => {
             )}
             </div>
         </div>
-  )
+    )
 }
 
 export default ToDoList
