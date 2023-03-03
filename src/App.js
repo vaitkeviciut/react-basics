@@ -8,7 +8,7 @@ import Counter from './components/CounterPage/Counter';
 import Cars from './components/CarsPage/Cars';
 import DarkModePage from './components/DarkModePage/DarkModePage';
 import ShoppingListPage from './components/ShoppingListPage/ShoppingListPage';
-import ShoppingListItem from './components/ShoppingListPage/ShoppingListItem';
+import ToDoList from './components/ToDoList/ToDoList';
 
 import './App.css';
 
@@ -36,6 +36,9 @@ function App() {
           <li>
             <Link to='/shoppinglistpage'>Shopping List</Link>
           </li>
+          <li>
+            <Link to='/todolist'>To Do List</Link>
+          </li>
         </ul>
       } />
         <Route path='/codeacademy' element={<MainPage />} />
@@ -46,7 +49,7 @@ function App() {
         <Route path='/cars' element={<Cars />} />
         <Route path='/darkmode' element={<DarkModePage />} />
         <Route path='/shoppinglistpage' element={<ShoppingListPage />} />
-        <Route path='/shoppinglistpage/item' element={<ShoppingListItem />} />
+        <Route path='/todolist' element={<ToDoList />} />
         <Route path='*' element={
           <div>
             <h1>404 error. Page not found</h1>
