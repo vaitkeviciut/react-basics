@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import './Cars.css';
+import './CarsPage.css';
+import CarItem from './CarItem';
 
-function Cars() {
+function CarsPage() {
     const engineTypes = ['electric', 'diesel', 'petrol', 'hybrid']
     const colors = ['black', 'red', 'blue', 'silver', 'white', 'special blue', 'other']
 
@@ -205,7 +206,6 @@ function Cars() {
                             </select>
                         </div>
                     )}
-                    
 
                     {selectedColor === 'other' && (
                         <div className="form-control">
@@ -248,48 +248,16 @@ function Cars() {
                     </div>
                 </div>
 
-                
-
                 {brand && model && engine && basePrice && mileage && color && image && <button className="cars-button" type="submit">Submit</button>}
             </form>
 
             {car && (
-                <div className='car-item'>
-                    <h2 className='car-name'>{car.brand} {`(${car.model})`}</h2>
-                    <img src={car.image} alt={`${car.brand} (${car.model})`} />
+                
+                <CarItem car={car} discount={getAllDiscount} allPrice={getAllPrice} totalPrice={getTotalPrice} vat={getVAT} finalPrice={getFinalPrice} />
 
-                    <h3>Car's info:</h3>
-                    <ul>
-                        <li>Color: {car.selectedColor}</li>
-                        <li>Engine type: {car.engine}</li>
-                        <li>Mileage: {car.mileage} km</li>
-                    </ul>
-
-                    <h3>Price:</h3>
-                    <ul>
-                        <li>Base price: {car.price.basePrice} €</li>
-                        <li>Engine price: {car.price.enginePrice} €</li>
-                        <li>Color Price: {car.price.colorPrice}€</li>
-                        <li><span className='bold'>Price:</span> {getAllPrice()}€</li>
-                    </ul>
-
-                    <h3>Discounts:</h3>
-                    <ul>
-                        <li>Mileage: {car.price.mileageDiscount}€</li>
-                        <li>Manual Discount: {car.price.manualDiscount}€</li>
-                        <li><span className='bold'>Discount:</span> {getAllDiscount()}€</li>
-                    </ul>
-
-                    <h3>Total price:</h3>
-                    <ul>
-                        <li>Price: {getTotalPrice()}€</li>
-                        <li>VAT: {getVAT()}€</li>
-                        <li><span className='bold'>Total Price:</span>{getFinalPrice()}€ VAT included</li>
-                    </ul>
-                </div>
             )}
 
         </div>
     )
 }
-export default Cars;
+export default CarsPage;

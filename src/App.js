@@ -5,10 +5,10 @@ import ProgramsPage from './components/ProgramsPage/ProgramsPage';
 import NewsPage from './components/NewsPage/NewsPage';
 import Contacts from './components/Contacts/Contacts';
 import Counter from './components/CounterPage/Counter';
-import Cars from './components/CarsPage/Cars';
+import CarsPage from './components/CarsPage/CarsPage';
 import DarkModePage from './components/DarkModePage/DarkModePage';
 import ShoppingListPage from './components/ShoppingListPage/ShoppingListPage';
-import ToDoList from './components/ToDoList/ToDoList';
+import ToDoListPage from './components/ToDoListPage/ToDoListPage';
 
 import './App.css';
 
@@ -46,10 +46,10 @@ function App() {
         <Route path='/codeacademy/programs' element={<ProgramsPage />} />
         <Route path='/contacts' element={<Contacts />} />
         <Route path='/counter' element={<Counter />} />
-        <Route path='/cars' element={<Cars />} />
+        <Route path='/cars' element={<CarsPage />} />
         <Route path='/darkmode' element={<DarkModePage />} />
         <Route path='/shoppinglistpage' element={<ShoppingListPage />} />
-        <Route path='/todolist' element={<ToDoList />} />
+        <Route path='/todolist' element={<ToDoListPage />} />
         <Route path='*' element={
           <div>
             <h1>404 error. Page not found</h1>

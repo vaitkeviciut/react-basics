@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import ShoppingListItem from './ShoppingListItem';
+import ShoppingListForm from './ShoppingListForm';
 
 function ShoppingListPage() {
     const [input, setInput] = useState('');
@@ -39,33 +41,16 @@ function ShoppingListPage() {
 
     return (
         <div className='shopping-content-wrapper'>
-            <form className='shopping-list-form' onSubmit={submitHandler}>
-                <div className='shopping-form-control-wrapper'>
-                    <label className='shopping-item-label' htmlFor='shopping-item-input'>Shopping item:</label>
-                    <input className='shopping-item-input'
-                    type='text'
-                    id='shopping-item-input'
-                    value={input}
-                    onChange={inputHandler}
-                    />
-                </div>
-                <div className='submit-button-wrapper'>
-                    <input className='shopping-submit-button' type="submit" />
-                </div>
-            </form>
+            
+            <ShoppingListForm input={input} onSubmit={submitHandler} onInput={inputHandler} />
+
             <div className='shopping-list-wrapper'>
             {list && list.length > 0 ? (
             <div>
                 <h2>Shopping List:</h2>
 
                 <ul className='shopping-list'>
-                {list.map((item, index) => (
-                    <li className='shopping-list-item' key={index}>
-                    <input className='shopping-list-checkbox' type="checkbox" onChange={() => doneHandler(item.id)} />
-                    <span className={item.done ? 'done' : ''}>{item.title}</span> 
-                    <button className='button-delete' onClick={() => deleteHandler(item.id)}>X</button>
-                    </li>
-                ))}
+                {list.map((item) => <ShoppingListItem data={item} key={item.id} onDone={doneHandler} onDelete={deleteHandler} />)}
                 </ul>
             </div>
             ) : (
