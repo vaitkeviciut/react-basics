@@ -49,8 +49,8 @@ const ToDoListPage = () => {
         <div className='todo-content-wrapper'>
             
             <ToDoListForm
-            input={input}
-            descriptionInput={descriptionInput}
+            title={input}
+            description={descriptionInput}
             onAddTask={addTaskHandler}
             onInput={inputHandler}
             onDescriptionInput={descriptionInputHandler}
@@ -61,7 +61,7 @@ const ToDoListPage = () => {
             <div>
                 <h2 className='todo-list-title'>To Do List:</h2>
                 <ul className='todo-list'>
-                    {tasks.map(task => <ToDoListItem key={task.id} task={task} onDone={doneHandler} onDelete={deleteHandler} />)}
+                    {tasks.map(task => <ToDoListItem key={task.id} data={task} onDone={doneHandler} onDelete={deleteHandler} />)}
                 </ul>
             </div>
 

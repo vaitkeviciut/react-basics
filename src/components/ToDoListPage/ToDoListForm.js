@@ -1,4 +1,4 @@
-const ToDoListForm = ({ input, descriptionInput, onAddTask, onInput, onDescriptionInput }) => {
+const ToDoListForm = ({ title, description, onAddTask, onInput, onDescriptionInput }) => {
   return (
     <form className='todo-list-form' onSubmit={onAddTask}>
         <div className='todo-form-control-wrapper'>
@@ -6,7 +6,7 @@ const ToDoListForm = ({ input, descriptionInput, onAddTask, onInput, onDescripti
             <input className='todo-item-input'
             type='text'
             id='todo-item-input'
-            value={input}
+            value={title}
             onChange={onInput}
             />
         </div>
@@ -15,12 +15,13 @@ const ToDoListForm = ({ input, descriptionInput, onAddTask, onInput, onDescripti
             <textarea className='description'
             id='description'
             rows='7'
-            value={descriptionInput}
+            value={description}
             onChange={onDescriptionInput}
             ></textarea>
         </div>
         <div className='submit-button-wrapper'>
-            <input className='todo-submit-button' type="submit" value='Add Task'/>
+          {title && description && <input className='todo-submit-button' type="submit" value='Add Task'/>}
+            
         </div>
     </form>
   )

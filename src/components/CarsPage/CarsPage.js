@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './CarsPage.css';
 import CarItem from './CarItem';
+import CarForm from './CarForm';
 
 function CarsPage() {
     const engineTypes = ['electric', 'diesel', 'petrol', 'hybrid']
@@ -125,135 +126,42 @@ function CarsPage() {
     return (
         <div>
             <h1>Choose your car</h1>
-            <form className="cars-form" onSubmit={formSubmitHandler}>
-                <div className="form-wrapper">
-                    <div className="form-control">
-                        <label className="cars-label" htmlFor="car-brand">Brand:</label>
-                        <input className='cars-input'
-                        type="text"
-                        id="car-brand"
-                        name="brand"
-                        placeholder="Enter a brand"
-                        value={brand}
-                        onChange={brandInputHandler}
-                        />
-                    </div>
-                    <div className="form-control">
-                        <label className="cars-label" htmlFor="car-model">Model:</label>
-                        <input className='cars-input'
-                        type="text"
-                        id="car-model"
-                        name="model"
-                        placeholder="Enter a model"
-                        value={model}
-                        onChange={modelInputHandler}
-                        />
-                    </div>
+            <CarForm
+            brand={brand}
+            model={model}
+            color={color}
+            image={image}
+            engine={engine}
+            mileage={mileage}
+            discount={discount}
+            basePrice={basePrice}
 
-                    {engineTypes && engineTypes.length > 0 && (
-                        <div className="form-control">
-                            <label className="cars-label" htmlFor="car-engine">Engine type:</label>
-                            <select className='cars-input'
-                                id="car-engine"
-                                name="engine"
-                                value={engine}
-                                onChange={engineInputHandler}>
-
-                                {optionElements(engineTypes)}
-
-                            </select>
-                        </div>
-                    )}
-                    
-                    <div className="form-control">
-                        <label className="cars-label" htmlFor="car-price">Price:</label>
-                        <input className='cars-input'
-                        type="number"
-                        id="car-price"
-                        name="price"
-                        placeholder="Enter price"
-                        min="100"
-                        step="50"
-                        value={basePrice}
-                        onChange={basePriceHandler}
-                        />
-                    </div>
-                    <div className="form-control">
-                        <label className="cars-label" htmlFor="car-mileage">Mileage:</label>
-                        <input className='cars-input'
-                        type="number"
-                        id="car-mileage"
-                        name="mileage"
-                        placeholder="Enter mileage"
-                        min="0"
-                        step="500"
-                        value={mileage}
-                        onChange={mileageInputHandler}
-                        />
-                    </div>
-
-                    {colors && colors.length > 0 && (
-                        <div className="form-control">
-                            <label className="cars-label" htmlFor="car-color">Color:</label>
-                            <select className='cars-input'
-                                id="car-color"
-                                name="color"
-                                value={selectedColor}
-                                onChange={colorInputHandler}>
-
-                                {optionElements(colors)}
-
-                            </select>
-                        </div>
-                    )}
-
-                    {selectedColor === 'other' && (
-                        <div className="form-control">
-                        <label className="cars-label" htmlFor='other-car-color'>Other color:</label>
-                        <input className='cars-input'
-                            type="text" 
-                            id="other-car-color" 
-                            name="other-color" 
-                            placeholder="Enter a color" 
-                            nChange={colorHandler}
-                            />
-                    </div>
-                    )}
-
-                    <div className="form-control">
-                        <label className="cars-label" htmlFor="car-image">Image:</label>
-                        <input className='cars-input'
-                        type="url"
-                        id="car-image"
-                        name="image"
-                        placeholder="Enter image url"
-                        value={image}
-                        onChange={imageInputHandler}
-                        />
-                    </div>
-
-                    <div className="form-control">
-                        <label className="cars-label" htmlFor="car-image">Discount:</label>
-                        <input className='cars-input'
-                        type="number"
-                        id="car-discount"
-                        name="discount"
-                        placeholder="Enter discount code"
-                        min="0"
-                        step="0.1"
-                        max="100"
-                        value={discount}
-                        onChange={discountHandler}
-                        />
-                    </div>
-                </div>
-
-                {brand && model && engine && basePrice && mileage && color && image && <button className="cars-button" type="submit">Submit</button>}
-            </form>
+            onFormSubmit={formSubmitHandler}
+            onBrandInput={brandInputHandler}
+            onModelInput={modelInputHandler}
+            onEngineInput={engineInputHandler}
+            onBasePrice={basePriceHandler}
+            onMileageInput={mileageInputHandler}
+            onColorInput={colorInputHandler}
+            onColor={colorHandler}
+            onImageInput={imageInputHandler}
+            onDiscount={discountHandler}
+            optionEngine={optionElements(engineTypes)}
+            optionColors={optionElements(colors)}
+            arrEngine={engineTypes}
+            arrColors={colors}
+            selectedColor={selectedColor}
+            />
 
             {car && (
                 
-                <CarItem car={car} discount={getAllDiscount} allPrice={getAllPrice} totalPrice={getTotalPrice} vat={getVAT} finalPrice={getFinalPrice} />
+                <CarItem
+                car={car}
+                discount={getAllDiscount}
+                allPrice={getAllPrice}
+                totalPrice={getTotalPrice}
+                vat={getVAT}
+                finalPrice={getFinalPrice} />
 
             )}
 
