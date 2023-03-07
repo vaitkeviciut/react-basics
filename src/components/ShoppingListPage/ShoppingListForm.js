@@ -11,7 +11,7 @@ const ShoppingListForm = ({ input, onSubmit, onInput }) => {
             />
         </div>
         <div className='submit-button-wrapper'>
-            <input className='shopping-submit-button' type="submit" />
+            {input && <input className='shopping-submit-button' type="submit" />}
         </div>
     </form>
   )

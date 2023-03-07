@@ -1,6 +1,7 @@
 const CarForm = ({ brand, model, engine, basePrice, mileage, color, image, discount, onFormSubmit, onBrandInput, onModelInput, onEngineInput, onBasePrice, onMileageInput, onColorInput, onColor, onImageInput, onDiscount, optionEngine, optionColors, arrEngine, arrColors, selectedColor }) => {
   return (
     <form className="cars-form" onSubmit={onFormSubmit}>
+        <h1 className='cars-page-title'>Choose your car</h1>
         <div className="form-wrapper">
             <div className="form-control">
                 <label className="cars-label" htmlFor="car-brand">Brand:</label>

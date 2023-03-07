@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import ShoppingListItem from './ShoppingListItem';
 import ShoppingListForm from './ShoppingListForm';
+import './ShoppingListPage.css';
 
 function ShoppingListPage() {
     const [input, setInput] = useState('');
@@ -41,13 +42,13 @@ function ShoppingListPage() {
 
     return (
         <div className='shopping-content-wrapper'>
-            
+            <h1 className="shopping-form-title">Shopping List</h1>
             <ShoppingListForm input={input} onSubmit={submitHandler} onInput={inputHandler} />
 
             <div className='shopping-list-wrapper'>
             {list && list.length > 0 ? (
             <div>
-                <h2>Shopping List:</h2>
+                <h2 className='shopping-list-title'>Shopping List:</h2>
 
                 <ul className='shopping-list'>
                 {list.map((item) => <ShoppingListItem data={item} key={item.id} onDone={doneHandler} onDelete={deleteHandler} />)}

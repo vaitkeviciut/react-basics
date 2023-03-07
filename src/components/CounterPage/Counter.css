@@ -41,7 +41,7 @@
     align-items: flex-end;
 }
 
-.buttons-wrapper {
+.color-buttons-wrapper {
     display: flex;
     gap: 7px;
     justify-content: space-between;

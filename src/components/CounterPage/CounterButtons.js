@@ -1,6 +1,6 @@
 const CounterButtons = ({ count, onCount, setCount, initialCount }) => {
   return (
-    <div className='buttons-wrapper'>
+    <div className='color-buttons-wrapper'>
         <button onClick={() => onCount(-5)} disabled={count < 6} className="button orange disabled">-5</button>
         <button onClick={() => onCount(-2)} disabled={count < 3} className="button green disabled">-2</button>
         <button onClick={() => onCount(-1)} disabled={count < 2} className="button berry disabled">-1</button>

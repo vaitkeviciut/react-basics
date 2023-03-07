@@ -124,8 +124,8 @@ function CarsPage() {
     const discountHandler = event => setDiscount(Number(event.target.value));
 
     return (
-        <div>
-            <h1>Choose your car</h1>
+        <div className='cars-page-content-wrapper'>
+            
             <CarForm
             brand={brand}
             model={model}
