@@ -1,0 +1,31 @@
+.chuck-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.chuck-form {
+    display: flex;
+    gap: 20px;
+}
+
+.chuck-select-input {
+    padding: 7px 20px;
+    border: none;
+}
+
+.chuck-button {
+    padding: 7px 40px;
+    border-radius: 20px;
+    background-color: darkblue;
+    border: 1px solid darkblue;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}

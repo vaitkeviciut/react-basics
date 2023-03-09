@@ -2,10 +2,6 @@ body {
     margin: 0;
 }
 
-.activities-container {
-    background-color: #ebc441;
-}
-
 .activities-all-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -26,7 +22,8 @@ body {
 .activity-form {
     text-align: center;
     margin-bottom: 50px;
-    background-color: rgba(241, 241, 241, 0.8);
+    background-color: #edcd63;
+    /* background-color: rgba(241, 241, 241, 0.8); */
     padding: 70px 100px;
     display: flex;
     flex-direction: column;

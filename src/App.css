@@ -5,3 +5,49 @@
 body {
   margin: 0px;
 }
+
+.route-list {
+  list-style-type: none;
+  padding-left: 0;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+
+.route-list-item-link {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 20px 20px 40px;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.route-list-item-link:hover {
+  background-color: #d6a700;
+  color: white;
+  filter: grayscale(0%);
+}
+.route-list-item-link:hover .project-pic {
+  filter: grayscale(0%);
+}
+
+.project-pic {
+  width: 380px;
+  height: 250px;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
