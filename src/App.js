@@ -14,6 +14,7 @@ import ApiActivitiesPage from './components/ApiActivitiesPage/ApiActivitiesPage'
 import ApiRandomUserPage from './components/ApiRandomUserPage/ApiRandomUserPage';
 import ApiChuckPage from './components/ApiChuckPage/ApiChuckPage';
 import ApiDogsPage from './components/ApiDogsPage/ApiDogsPage';
+import ApiPage from './components/ApiPage/ApiPage';
 
 import './App.css';
 
@@ -36,6 +37,7 @@ function App() {
         <Route path='/apichuck' element={<ApiChuckPage />} />
         <Route path='/apidogs/:breed' element={<ApiDogsPage />} />
         <Route path='/apidogs' element={<ApiDogsPage />} />
+        <Route path='/apipage' element={<ApiPage />} />
         <Route path='*' element={
           <div>
             <h1>404 error. Page not found</h1>

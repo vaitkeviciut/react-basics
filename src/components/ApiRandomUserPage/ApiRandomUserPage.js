@@ -3,7 +3,6 @@ import './ApiRandomUserPage.css';
 
 const ApiRandomUserPage = () => {
 
-  const [person, setPerson] =useState('');
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [gender, setGender] = useState('');
@@ -14,6 +13,8 @@ const ApiRandomUserPage = () => {
   const [password, setPassword] = useState('');
   const [country, setCountry] = useState([]);
   const [city, setCity] = useState('');
+  const [showPersonalInfo, setShowPersonalInfo] = useState(false);
+  const [count, setCount] = useState([]);
 
   const resultsArr = [1, 2, 3, 4, 5]
   const countryArr = ['AU', 'BR', 'CA', 'CH', 'DE', 'DK', 'ES', 'FI', 'FR', 'GB', 'IE', 'IN', 'IR', 'MX', 'NL', 'NO', 'NZ', 'RS', 'TR', 'UA', 'US']
@@ -62,6 +63,7 @@ const ApiRandomUserPage = () => {
         setPassword(result.login.password)
         setCountry(result.location.country)
         setCity(result.location.city)
+        setCount(result)
       
     })
   })
@@ -90,7 +92,7 @@ const ApiRandomUserPage = () => {
         })
     }
 
-    const deleteStudentHandler = id => setPerson(prevState => prevState.filter(person => person.id !== id));
+    const personalInfoHandler = () => setShowPersonalInfo(prevState => !prevState);
 
   return (
     <div className='generator-wrapper'>
@@ -129,29 +131,33 @@ const ApiRandomUserPage = () => {
       </div>
 
       <div className="random-user-wrapper">
-            <div className='random-user new'>
-              <h2 className='generator-user-name'>{firstName} {lastName} ({gender})</h2>
-              <img className='profile-photo image-wrapper' src={picture} />
-              <h3 className='fake-person-title'>Personal info:</h3>
-              <ul className='fake-person-list'>
-                <li className='fake-person-list-tem'>Phone number: {phone}</li>
-                <li className='fake-person-list-tem'>Email address: {email}</li>
-              </ul>
-              <h3 className='fake-person-title'>Personal login info:</h3>
-              <ul className='fake-person-list'>
-                <li className='fake-person-list-tem'>Username: {username}</li>
-                <li className='fake-person-list-tem'>Password: {password}</li>
-              </ul>
-              <h3 className='fake-person-title'>Location info:</h3>
-              <ul className='fake-person-list'>
-                <li className='fake-person-list-tem'>Country: {country}</li>
-                <li className='fake-person-list-tem'>City: {city}</li>
-              </ul>
-              <div className='button-wrapper'>
-                <button className='fake-person-button'>Show private information</button>
-                <button onClick={deleteStudentHandler} className='fake-person-button'>Delete this user</button>
-              </div>
+        {count && count.length > 0 && (
+          <div className='random-user new'>
+            <h2 className='generator-user-name'>{firstName} {lastName} ({gender})</h2>
+            <img className='profile-photo image-wrapper' src={picture} />
+            <h3 className='fake-person-title'>Personal info:</h3>
+            <ul className='fake-person-list'>
+              <li className='fake-person-list-tem'>Phone number: {showPersonalInfo ? phone : '*******'}</li>
+              <li className='fake-person-list-tem'>Email address: {showPersonalInfo ? email : '*******'}</li>
+            </ul>
+            <h3 className='fake-person-title'>Personal login info:</h3>
+            <ul className='fake-person-list'>
+              <li className='fake-person-list-tem'>Username: {username}</li>
+              <li className='fake-person-list-tem'>Password: {password}</li>
+            </ul>
+            <h3 className='fake-person-title'>Location info:</h3>
+            <ul className='fake-person-list'>
+              <li className='fake-person-list-tem'>Country: {country}</li>
+              <li className='fake-person-list-tem'>City: {city}</li>
+            </ul>
+            <div className='button-wrapper'>
+              <button onClick={personalInfoHandler} className='fake-person-button'>{showPersonalInfo ? 'Hide personal info' : 'Show personal info'}</button>
+              <button className='fake-person-button'>Delete this user</button>
             </div>
+          </div>
+        )}
+            
+            
       </div>
     </div>
   )

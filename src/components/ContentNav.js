@@ -51,6 +51,9 @@ const ContentNav = () => {
           <li className='route-list-item'>
             <NavLink className='route-list-item-link' to='/apidogs'><img className='project-pic' src={image11} alt={image11} />Dogs Photos (API)</NavLink>
           </li>
+          <li className='route-list-item'>
+            <NavLink className='route-list-item-link' to='/apipage'>Api Page (API)</NavLink>
+          </li>
         </ul>
   )
 }
