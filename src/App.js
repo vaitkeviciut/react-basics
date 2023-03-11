@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={<ContentNav/>} />
+        <Route path='/react-basics/' element={<ContentNav/>} />
         <Route path='/codeacademy' element={<MainPage />} />
         <Route path='/codeacademy/news' element={<NewsPage />} />
         <Route path='/codeacademy/programs' element={<ProgramsPage />} />
@@ -41,7 +41,7 @@ function App() {
         <Route path='*' element={
           <div className='view-projects-wrapper'>
             <h1 className='view-projects-title'>Welcome</h1>
-            <Link className='view-projects' to='/'>View Projects</Link>
+            <Link className='view-projects' to='/react-basics/'>View Projects</Link>
           </div>
         } />
 
