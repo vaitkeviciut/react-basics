@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './ApiActivitiesPage.css';
+import BackButton from '../BackButton';
 
 const ApiActivitiesPage = () => {
     const [activity, setActivity] = useState('Loading...');
@@ -70,6 +71,8 @@ const ApiActivitiesPage = () => {
     const firstLetterUpperCase = word => word[0].toUpperCase() + word.slice(1);
 
   return (
+    <>
+    <BackButton />
     <div className="activities-container">
         <div className="activities-all-wrapper">
             <div className="content-wrapper">
@@ -142,6 +145,8 @@ const ApiActivitiesPage = () => {
 
         </div>
     </div>
+    </>
+    
   )
 }
 

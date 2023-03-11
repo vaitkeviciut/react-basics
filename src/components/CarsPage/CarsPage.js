@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './CarsPage.css';
+import BackButton from '../BackButton';
 import CarItem from './CarItem';
 import CarForm from './CarForm';
 
@@ -124,7 +125,9 @@ function CarsPage() {
     const discountHandler = event => setDiscount(Number(event.target.value));
 
     return (
-        <div className='cars-page-content-wrapper'>
+      <>
+      <BackButton />
+      <div className='cars-page-content-wrapper'>
             
             <CarForm
             brand={brand}
@@ -166,6 +169,8 @@ function CarsPage() {
             )}
 
         </div>
+      </>
+        
     )
 }
 export default CarsPage;

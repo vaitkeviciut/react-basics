@@ -1,4 +1,5 @@
 import './MainPage.css';
+import BackButton from '../BackButton';
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 
@@ -9,6 +10,7 @@ import Section2 from './Section2/Section2';
 function MainPage() {
     return (
     <>
+    <BackButton />
         <Header />
         <div className="Main-page">
             <div className="main-content-container">

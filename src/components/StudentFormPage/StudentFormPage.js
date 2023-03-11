@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { v4 as uuid } from 'uuid';
+import BackButton from '../BackButton';
 import HeroTextWrapper from './HeroTextWrapper';
 import HeroButton from './HeroButton';
 import StudentItem from './StudentItem';
@@ -132,6 +133,8 @@ const StudentFormPage = () => {
 
 
   return (
+    <>
+    <BackButton />
     <div className='student-form-page-wrapper'>
         
         <div className="hero-box-content-wrapper">
@@ -296,6 +299,8 @@ const StudentFormPage = () => {
             </div>
         </div>
     </div>
+    </>
+    
   )
 }
 

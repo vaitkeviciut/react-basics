@@ -1,4 +1,5 @@
 import './ProgramsPage.css';
+import BackButton from '../BackButton';
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 
@@ -13,6 +14,7 @@ import Container from '../Container/Container';
 function ProgramsPage() {
     return (
     <>
+    <BackButton />
         <Header />
         <Container>        
                 <Title title="Programos" />

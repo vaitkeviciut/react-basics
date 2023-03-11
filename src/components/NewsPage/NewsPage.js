@@ -1,4 +1,5 @@
 import './NewsPage.css';
+import BackButton from '../BackButton';
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 
@@ -149,6 +150,7 @@ function NewsPage() {
 
     return (
     <>
+    <BackButton />
         <Header />
         <Container>
             <div className='news-container'>
