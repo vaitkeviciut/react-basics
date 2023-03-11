@@ -1,13 +1,13 @@
 import './ProgramsPage.css';
-import BackButton from '../BackButton';
-import Header from '../Header/Header'
-import Footer from '../Footer/Footer'
+import BackButton from '../../../BackButton';
+import Header from '../../CaHeader/Header/Header'
+import Footer from '../../CaFooter/Footer/Footer'
 
 import ProgramsFilter from './ProgramsFilter/ProgramsFilter';
 import ProgramsList from './ProgramsList/ProgramsList';
 import Banner from './Banner/Banner'
-import Title from '../NewsPage/Title'
-import Container from '../Container/Container';
+import Title from '../../CaNewsPage/NewsPage/Title'
+import Container from '../../../Container/Container';
 
 
 

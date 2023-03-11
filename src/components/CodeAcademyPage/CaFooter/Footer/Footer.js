@@ -1,9 +1,9 @@
 import './Footer.css';
-import logoFooter from '../images/codeacademy-white.svg';
-import footerimg from '../images/sertika.svg';
-import instagram from '../SocialMediaIcons/instagram.svg';
-import facebook from '../SocialMediaIcons/facebook.svg';
-import linkedin from '../SocialMediaIcons/linkedin.svg';
+import logoFooter from '../../../images/codeacademy-white.svg';
+import footerimg from '../../../images/sertika.svg';
+import instagram from '../../../SocialMediaIcons/instagram.svg';
+import facebook from '../../../SocialMediaIcons/facebook.svg';
+import linkedin from '../../../SocialMediaIcons/linkedin.svg';
 
 function Footer() {
     return (

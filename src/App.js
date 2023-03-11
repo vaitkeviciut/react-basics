@@ -1,9 +1,9 @@
 import { Route, Routes, Link } from 'react-router-dom';
 
 import ContentNav from './components/ContentNav';
-import MainPage from './components/MainPage/MainPage';
-import ProgramsPage from './components/ProgramsPage/ProgramsPage';
-import NewsPage from './components/NewsPage/NewsPage';
+import MainPage from './components/CodeAcademyPage/CaMainPage/MainPage/MainPage';
+import ProgramsPage from './components/CodeAcademyPage/CaProgramsPage/ProgramsPage/ProgramsPage';
+import NewsPage from './components/CodeAcademyPage/CaNewsPage/NewsPage/NewsPage';
 import Contacts from './components/Contacts/Contacts';
 import Counter from './components/CounterPage/Counter';
 import CarsPage from './components/CarsPage/CarsPage';

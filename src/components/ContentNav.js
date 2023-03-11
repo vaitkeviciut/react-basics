@@ -22,7 +22,9 @@ const ContentNav = () => {
       <BackButton />
       <ul className='route-list'>
         <li className='route-list-item'>
-          <NavLink className='route-list-item-link' to='/codeacademy'><img className='project-pic' src={image1} alt={image1} />CodeAcademy - Project</NavLink>
+          <NavLink className='route-list-item-link' to='/codeacademy'><img className='project-pic' src={image1} alt={image1} />
+          <h2>CodeAcademy - Project</h2>
+          </NavLink>
         </li>
         <li className='route-list-item'>
           <NavLink className='route-list-item-link' to='/contacts'><img className='project-pic' src={image2} alt={image2} />Contacts - Project</NavLink>

@@ -1,7 +1,7 @@
 import './NewsPage.css';
-import BackButton from '../BackButton';
-import Header from '../Header/Header'
-import Footer from '../Footer/Footer'
+import BackButton from '../../../BackButton';
+import Header from '../../CaHeader/Header/Header'
+import Footer from '../../CaFooter/Footer/Footer'
 
 import NewsMenu from './NewsMenu/NewsMenu'
 import NewsMain from './NewsMain/NewsMain'
@@ -11,16 +11,16 @@ import NewsVideo from './NewsVideo/NewsVideo'
 import NewsPodcast from './NewsPodcast/NewsPodcast'
 import NewsEvents from './NewsEvents/NewsEvents'
 import Title from './Title';
-import Container from '../Container/Container';
+import Container from '../../../Container/Container';
 
-import main1 from '../images/main-news-1.jpg';
-import main2 from '../images/main-news-2.jpg';
-import guy from '../images/guy.png';
-import play from '../images/play.png';
-import sec1 from '../images/secondary-news-1.jpg'
-import sec2 from '../images/secondary-news-2.jpg'
-import sec3 from '../images/secondary-news-3.jpg'
-import sec4 from '../images/secondary-news-4.jpg'
+import main1 from '../../../images/main-news-1.jpg';
+import main2 from '../../../images/main-news-2.jpg';
+import guy from '../../../images/guy.png';
+import play from '../../../images/play.png';
+import sec1 from '../../../images/secondary-news-1.jpg'
+import sec2 from '../../../images/secondary-news-2.jpg'
+import sec3 from '../../../images/secondary-news-3.jpg'
+import sec4 from '../../../images/secondary-news-4.jpg'
 
 
 function NewsPage() {

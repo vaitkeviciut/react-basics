@@ -1,17 +1,14 @@
 import ProgramItem from './ProgramItem/ProgramItem';
 import './ProgramsList.css';
 
-import illustration1 from '../../images/ca-1.svg';
-import illustration2 from '../../images/ca-2.svg';
-import illustration3 from '../../images/ca-3-4.svg';
-import illustration5 from '../../images/ca-5.svg';
-import illustration6 from '../../images/ca-6.svg';
-// import cap from '../../images/graduate-cap.png'
-// import moon from '../../images/moon.png';
-// import sun from '../../images/sun.png';
-import MoonIcon from '../../MoonIcon';
-import SunIcon from '../../SunIcon';
-import CapIcon from '../../CapIcon';
+import illustration1 from '../../../../images/ca-1.svg';
+import illustration2 from '../../../../images/ca-2.svg';
+import illustration3 from '../../../../images/ca-3-4.svg';
+import illustration5 from '../../../../images/ca-5.svg';
+import illustration6 from '../../../../images/ca-6.svg';
+import MoonIcon from '../../../../MoonIcon';
+import SunIcon from '../../../../SunIcon';
+import CapIcon from '../../../../CapIcon';
 
 function ProgramsList() {
 

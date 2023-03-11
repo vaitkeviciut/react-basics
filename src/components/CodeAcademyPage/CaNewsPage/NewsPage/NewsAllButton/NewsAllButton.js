@@ -1,5 +1,5 @@
 import './NewsAllButton.css';
-import next from '../../images/next.png';
+import next from '../../../../images/next.png';
 
 function NewsAllButton(props) {
 

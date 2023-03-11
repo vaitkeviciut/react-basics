@@ -1,7 +1,7 @@
 import './MainPage.css';
-import BackButton from '../BackButton';
-import Header from '../Header/Header'
-import Footer from '../Footer/Footer'
+import BackButton from '../../../BackButton';
+import Header from '../../CaHeader/Header/Header'
+import Footer from '../../CaFooter/Footer/Footer'
 
 import HeroBox from './HeroBox/HeroBox';
 import Section1 from './Section1/Section1';

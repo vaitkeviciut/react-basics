@@ -2,7 +2,7 @@ import './Section2.css'
 
 import Section2Item from './Section2Item/Section2Item'
 
-import image from '../../images/Artboard1.jpg';
+import image from '../../../../images/Artboard1.jpg';
 
 function Section2() {
     return (

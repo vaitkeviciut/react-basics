@@ -1,5 +1,5 @@
 import './Banner.css'
-import next from '../../images/next.png'
+import next from '../../../../images/next.png'
 
 function Banner(props) {
     return(
