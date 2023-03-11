@@ -6,6 +6,37 @@ body {
   margin: 0px;
 }
 
+.view-projects-wrapper {
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.view-projects-title {
+  font-size: 45px;
+  font-weight: 700;
+  color: #d6a700;
+  text-transform: uppercase;
+}
+
+.view-projects {
+  padding: 7px 50px;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.view-projects:hover {
+  background-color: #d6a700;
+  border-color: #d6a700;
+}
+
 .route-list {
   list-style-type: none;
   padding-left: 0;

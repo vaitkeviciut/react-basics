@@ -22,26 +22,26 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/react-basics' element={<ContentNav/>} />
-        <Route path='/react-basics/codeacademy' element={<MainPage />} />
-        <Route path='/react-basics/codeacademy/news' element={<NewsPage />} />
-        <Route path='/react-basics/codeacademy/programs' element={<ProgramsPage />} />
-        <Route path='/react-basics/contacts' element={<Contacts />} />
-        <Route path='/react-basics/counter' element={<Counter />} />
-        <Route path='/react-basics/cars' element={<CarsPage />} />
-        <Route path='/react-basics/shoppinglistpage' element={<ShoppingListPage />} />
-        <Route path='/react-basics/todolist' element={<ToDoListPage />} />
-        <Route path='/react-basics/studentform' element={<StudentFormPage />} />
-        <Route path='/react-basics/apiactivities' element={<ApiActivitiesPage />} />
-        <Route path='/react-basics/apirandomuser' element={<ApiRandomUserPage />} />
-        <Route path='/react-basics/apichuck' element={<ApiChuckPage />} />
-        <Route path='/react-basics/apidogs/:breed' element={<ApiDogsPage />} />
-        <Route path='/react-basics/apidogs' element={<ApiDogsPage />} />
-        <Route path='/react-basics/apipage' element={<ApiPage />} />
+        <Route path='/' element={<ContentNav/>} />
+        <Route path='/codeacademy' element={<MainPage />} />
+        <Route path='/codeacademy/news' element={<NewsPage />} />
+        <Route path='/codeacademy/programs' element={<ProgramsPage />} />
+        <Route path='/contacts' element={<Contacts />} />
+        <Route path='/counter' element={<Counter />} />
+        <Route path='/cars' element={<CarsPage />} />
+        <Route path='/shoppinglistpage' element={<ShoppingListPage />} />
+        <Route path='/todolist' element={<ToDoListPage />} />
+        <Route path='/studentform' element={<StudentFormPage />} />
+        <Route path='/apiactivities' element={<ApiActivitiesPage />} />
+        <Route path='/apirandomuser' element={<ApiRandomUserPage />} />
+        <Route path='/apichuck' element={<ApiChuckPage />} />
+        <Route path='/apidogs/:breed' element={<ApiDogsPage />} />
+        <Route path='/apidogs' element={<ApiDogsPage />} />
+        <Route path='/apipage' element={<ApiPage />} />
         <Route path='*' element={
-          <div>
-            <h1>404 error. Page not found</h1>
-            <Link to='/react-basics'>Back to Home page</Link>
+          <div className='view-projects-wrapper'>
+            <h1 className='view-projects-title'>Welcome</h1>
+            <Link className='view-projects' to='/'>View Projects</Link>
           </div>
         } />
 
