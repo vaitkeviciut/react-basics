@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import './ApiChuckPage.css';
-import BackButton from '../BackButton';
 
 const ApiChuckPage = () => {
     const [joke, setJoke] = useState('Loading...');
@@ -41,7 +40,6 @@ const ApiChuckPage = () => {
 
     return (
         <>
-        <BackButton />
         <div className="chuck-content-wrapper">
             {categories && categories.length > 0 && (
             <form className='chuck-form' onSubmit={categoryJokeHandler}>

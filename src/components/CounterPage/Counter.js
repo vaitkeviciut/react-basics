@@ -1,6 +1,5 @@
 import './Counter.css';
 import { useState } from 'react';
-import BackButton from '../BackButton';
 import Container from '../Container/Container';
 import CounterButtons from './CounterButtons';
 import CounterOutput from './CounterOutput';
@@ -45,7 +44,6 @@ function Counter() {
 
     return(
     <>
-        <BackButton />
         <Container>
             <div className='counter-content-wrapper'>
                 <h1 className='counter-title'>Grader</h1>

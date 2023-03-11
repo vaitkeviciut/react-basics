@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink, useParams } from 'react-router-dom';
 import './ApiDogsPage.css';
-import BackButton from '../BackButton';
 
 const ApiDogsPage = () => {
     let { breed } = useParams();
@@ -36,7 +35,6 @@ const ApiDogsPage = () => {
 
   return (
     <>
-    <BackButton />
     <div className='dogs-content-wrapper'>
         {breeds && breeds.length > 0 && (
         <div className='breeds-list'>

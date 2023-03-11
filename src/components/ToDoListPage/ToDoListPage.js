@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './ToDoList.css';
-import BackButton from '../BackButton';
 import ToDoListItem from './ToDoListItem';
 import ToDoListForm from './ToDoListForm';
 
@@ -48,7 +47,6 @@ const ToDoListPage = () => {
 
     return (
         <>
-        <BackButton />
         <div className='todo-content-wrapper'>
             <h1 className="todo-form-title">To Do List</h1>
             <ToDoListForm

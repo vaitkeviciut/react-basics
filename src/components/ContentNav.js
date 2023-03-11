@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import '../App.css'
-import BackButton from './BackButton';
 
 import image1 from './images/ca-page.jpg'
 import image2 from './images/contacts.jpg'
@@ -19,8 +18,20 @@ import image11 from './images/dogs.jpg'
 const ContentNav = () => {
   return (
     <div>
-      <BackButton />
       <ul className='route-list'>
+
+        <li className='route-list-item'>
+          <NavLink className='route-list-item-link' to='/studentform'><img className='project-pic' src={image7} alt={image7} />
+          <h2 className='contentnav-project-title'>Student Form Page</h2>
+          </NavLink>
+          <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/StudentFormPage' target='_blank'>GitHub</a>
+        </li>
+        <li className='route-list-item'>
+          <NavLink className='route-list-item-link' to='/cars'><img className='project-pic' src={image4} alt={image4} />
+          <h2 className='contentnav-project-title'>Cars Form</h2>
+          </NavLink>
+          <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/CarsPage' target='_blank'>GitHub</a>
+        </li>
         <li className='route-list-item'>
           <NavLink className='route-list-item-link' to='/codeacademy'><img className='project-pic' src={image1} alt={image1} />
           <h2 className='contentnav-project-title'>CodeAcademy - Project</h2>
@@ -39,12 +50,7 @@ const ContentNav = () => {
           </NavLink>
           <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/CounterPage' target='_blank'>GitHub</a>
         </li>
-        <li className='route-list-item'>
-          <NavLink className='route-list-item-link' to='/cars'><img className='project-pic' src={image4} alt={image4} />
-          <h2 className='contentnav-project-title'>Cars Form</h2>
-          </NavLink>
-          <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/CarsPage' target='_blank'>GitHub</a>
-        </li>
+        
         <li className='route-list-item'>
           <NavLink className='route-list-item-link' to='/shoppinglistpage'><img className='project-pic' src={image5} alt={image5} />
           <h2 className='contentnav-project-title'>Shopping List</h2>
@@ -57,12 +63,7 @@ const ContentNav = () => {
           </NavLink>
           <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/ToDoListPage' target='_blank'>GitHub</a>
         </li>
-        <li className='route-list-item'>
-          <NavLink className='route-list-item-link' to='/studentform'><img className='project-pic' src={image7} alt={image7} />
-          <h2 className='contentnav-project-title'>Student Form Page</h2>
-          </NavLink>
-          <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/StudentFormPage' target='_blank'>GitHub</a>
-        </li>
+        
         <li className='route-list-item'>
           <NavLink className='route-list-item-link' to='/apiactivities'><img className='project-pic' src={image8} alt={image8} />
           <h2 className='contentnav-project-title'>Activities Generator (API)</h2>
@@ -86,13 +87,6 @@ const ContentNav = () => {
           <h2 className='contentnav-project-title'>Dogs Photos (API)</h2>
           </NavLink>
           <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/ApiDogsPage' target='_blank'>GitHub</a>
-        </li>
-        <li className='route-list-item'>
-          <NavLink className='route-list-item-link' to='/apipage'>
-            <h2 className='contentnav-project-title'>Api Page (API)</h2>
-            </NavLink>
-            <a className='project-github-link' href='' target='_blank'>GitHub</a>
-
         </li>
       </ul>
     </div>

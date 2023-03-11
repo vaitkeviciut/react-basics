@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import BackButton from '../BackButton';
 import ShoppingListItem from './ShoppingListItem';
 import ShoppingListForm from './ShoppingListForm';
 import './ShoppingListPage.css';
@@ -43,7 +42,6 @@ function ShoppingListPage() {
 
     return (
         <>
-        <BackButton />
         <div className='shopping-content-wrapper'>
             <h1 className="shopping-form-title">Shopping List</h1>
             <ShoppingListForm input={input} onSubmit={submitHandler} onInput={inputHandler} />

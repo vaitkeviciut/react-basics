@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import './ApiActivitiesPage.css';
-import BackButton from '../BackButton';
 
 const ApiActivitiesPage = () => {
     const [activity, setActivity] = useState('Loading...');
@@ -72,7 +71,6 @@ const ApiActivitiesPage = () => {
 
   return (
     <>
-    <BackButton />
     <div className="activities-container">
         <div className="activities-all-wrapper">
             <div className="content-wrapper">

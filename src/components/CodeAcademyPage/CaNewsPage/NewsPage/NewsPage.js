@@ -1,5 +1,4 @@
 import './NewsPage.css';
-import BackButton from '../../../BackButton';
 import Header from '../../CaHeader/Header/Header'
 import Footer from '../../CaFooter/Footer/Footer'
 
@@ -150,7 +149,6 @@ function NewsPage() {
 
     return (
     <>
-    <BackButton />
         <Header />
         <Container>
             <div className='news-container'>

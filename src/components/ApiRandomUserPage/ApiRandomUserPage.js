@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import './ApiRandomUserPage.css';
-import BackButton from '../BackButton';
 
 const ApiRandomUserPage = () => {
 
@@ -97,7 +96,6 @@ const ApiRandomUserPage = () => {
 
   return (
     <>
-    <BackButton />
     <div className='generator-wrapper'>
       <div className='generator-form-wrapper'>
         <form id='generator-form' onSubmit={formSubmitHandler}>

@@ -1,5 +1,6 @@
 import { Route, Routes, Link } from 'react-router-dom';
 
+import BackButton from './components/BackButton'
 import ContentNav from './components/ContentNav';
 import MainPage from './components/CodeAcademyPage/CaMainPage/MainPage/MainPage';
 import ProgramsPage from './components/CodeAcademyPage/CaProgramsPage/ProgramsPage/ProgramsPage';
@@ -14,15 +15,15 @@ import ApiActivitiesPage from './components/ApiActivitiesPage/ApiActivitiesPage'
 import ApiRandomUserPage from './components/ApiRandomUserPage/ApiRandomUserPage';
 import ApiChuckPage from './components/ApiChuckPage/ApiChuckPage';
 import ApiDogsPage from './components/ApiDogsPage/ApiDogsPage';
-import ApiPage from './components/ApiPage/ApiPage';
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <BackButton />
       <Routes>
-        <Route path='/react-basics/' element={<ContentNav/>} />
+        <Route path='/' element={<ContentNav/>} />
         <Route path='/codeacademy' element={<MainPage />} />
         <Route path='/codeacademy/news' element={<NewsPage />} />
         <Route path='/codeacademy/programs' element={<ProgramsPage />} />
@@ -37,11 +38,10 @@ function App() {
         <Route path='/apichuck' element={<ApiChuckPage />} />
         <Route path='/apidogs/:breed' element={<ApiDogsPage />} />
         <Route path='/apidogs' element={<ApiDogsPage />} />
-        <Route path='/apipage' element={<ApiPage />} />
         <Route path='*' element={
           <div className='view-projects-wrapper'>
-            <h1 className='view-projects-title'>Welcome</h1>
-            <Link className='view-projects' to='/react-basics/'>View Projects</Link>
+            <h1 className='view-projects-title'>404 Error</h1>
+            <Link className='view-projects' to='/'>Back to projects</Link>
           </div>
         } />
 
