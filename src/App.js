@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/react-basics/' element={<ContentNav/>} />
+        <Route path='/react-basics' element={<ContentNav/>} />
         <Route path='/react-basics/codeacademy' element={<MainPage />} />
         <Route path='/react-basics/codeacademy/news' element={<NewsPage />} />
         <Route path='/react-basics/codeacademy/programs' element={<ProgramsPage />} />
@@ -41,7 +41,7 @@ function App() {
         <Route path='*' element={
           <div>
             <h1>404 error. Page not found</h1>
-            <Link to='/react-basics/'>Back to Home page</Link>
+            <Link to='/react-basics'>Back to Home page</Link>
           </div>
         } />
 
