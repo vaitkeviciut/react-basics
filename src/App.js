@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={<ContentNav/>} />
+        <Route path='/react-basics/' element={<ContentNav/>} />
         <Route path='/codeacademy' element={<MainPage />} />
         <Route path='/codeacademy/news' element={<NewsPage />} />
         <Route path='/codeacademy/programs' element={<ProgramsPage />} />
