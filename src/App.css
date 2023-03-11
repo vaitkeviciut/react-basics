@@ -20,29 +20,60 @@ body {
   gap: 20px;
 }
 
+.route-list-item {
+  background-color: white;
+  padding: 20px 20px 40px;
+  border-radius: 10px;
+}
+
+.route-list-item:hover {
+  background-color: #d6a700;
+}
+
+
 
 .route-list-item-link {
   text-decoration: none;
   color: black;
-  background-color: white;
-  padding: 20px 20px 40px;
   font-weight: 700;
   font-size: 22px;
   text-transform: uppercase;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   width: 100%;
 }
 
-.route-list-item-link:hover {
-  background-color: #d6a700;
+.route-list-item:hover .route-list-item-link {
   color: white;
   filter: grayscale(0%);
 }
-.route-list-item-link:hover .project-pic {
+
+.contentnav-project-title {
+  font-size: 22px;
+  margin-top: 0;
+}
+
+
+.route-list-item:hover .route-list-item-link .project-pic {
   filter: grayscale(0%);
+}
+
+.project-github-link {
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  color: #d6a700;
+}
+
+.route-list-item:hover .project-github-link {
+  color: rgb(81, 71, 51);
+}
+
+.route-list-item .project-github-link:hover {
+  padding-bottom: 3px;
+  border-bottom: 3px solid rgb(251, 197, 82);
+  color: rgb(251, 197, 82);
 }
 
 .project-pic {
@@ -51,3 +82,4 @@ body {
   object-fit: cover;
   filter: grayscale(100%);
 }
+
