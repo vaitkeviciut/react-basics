@@ -40,8 +40,8 @@ function App() {
         <Route path='/apidogs' element={<ApiDogsPage />} />
         <Route path='*' element={
           <div className='view-projects-wrapper'>
-            <h1 className='view-projects-title'>404 Error</h1>
-            <Link className='view-projects' to='/'>Back to projects</Link>
+            <h1 className='view-projects-title'>Welcome</h1>
+            <Link className='view-projects' to='/'>Go to projects</Link>
           </div>
         } />
 

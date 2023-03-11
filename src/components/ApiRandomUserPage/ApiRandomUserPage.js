@@ -135,7 +135,7 @@ const ApiRandomUserPage = () => {
         {count && count.length > 0 && (
           <div className='random-user new'>
             <h2 className='generator-user-name'>{firstName} {lastName} ({gender})</h2>
-            <img className='profile-photo image-wrapper' src={picture} />
+            <img className='profile-photo image-wrapper' src={picture} alt='person' />
             <h3 className='fake-person-title'>Personal info:</h3>
             <ul className='fake-person-list'>
               <li className='fake-person-list-tem'>Phone number: {showPersonalInfo ? phone : '*******'}</li>

@@ -4,10 +4,10 @@ const CounterOutput = ({ grades, onDelete }) => {
   return (
     <div className='counter-grades-wrapper'>
                 <h2 className="text-purple">Grades:</h2>
-                {!grades || grades.length == 0 &&
+                {!grades || grades.length == 0 && (
                 <p className='no-grades-line'>No saved grades . . .</p>
-                }
-                {grades && grades.length > 0 && 
+                )}
+                {grades && grades.length > 0 && (
                 <ul className='grades-output-list'>
                     {grades.map((grade) => 
                     
@@ -18,7 +18,7 @@ const CounterOutput = ({ grades, onDelete }) => {
                         />
 
                     )}
-                </ul>}
+                </ul>)}
             </div>
   )
 }

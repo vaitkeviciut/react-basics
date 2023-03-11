@@ -50,7 +50,6 @@ const ContentNav = () => {
           </NavLink>
           <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/CounterPage' target='_blank'>GitHub</a>
         </li>
-        
         <li className='route-list-item'>
           <NavLink className='route-list-item-link' to='/shoppinglistpage'><img className='project-pic' src={image5} alt={image5} />
           <h2 className='contentnav-project-title'>Shopping List</h2>
