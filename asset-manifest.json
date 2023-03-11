@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-basics/static/css/main.c29e1bdc.css",
-    "main.js": "/react-basics/static/js/main.b3211834.js",
+    "main.css": "/react-basics/static/css/main.19f5ac43.css",
+    "main.js": "/react-basics/static/js/main.2196e750.js",
     "static/js/787.10cefd62.chunk.js": "/react-basics/static/js/787.10cefd62.chunk.js",
     "static/media/ca-5.svg": "/react-basics/static/media/ca-5.8a7ccd8c3f035918548115bef7e6d558.svg",
     "static/media/ca-2.svg": "/react-basics/static/media/ca-2.1bef8315b8d45e37aa76ae8162e3ba84.svg",
@@ -38,12 +38,12 @@
     "static/media/decoration-arrows.svg": "/react-basics/static/media/decoration-arrows.a1463d32c67770ff569d.svg",
     "static/media/facebook.svg": "/react-basics/static/media/facebook.be3cc88548d8918ca082f6c313d649d6.svg",
     "static/media/decoration-arrows-1.svg": "/react-basics/static/media/decoration-arrows-1.6362b0a2cb914f43f8c1.svg",
-    "main.c29e1bdc.css.map": "/react-basics/static/css/main.c29e1bdc.css.map",
-    "main.b3211834.js.map": "/react-basics/static/js/main.b3211834.js.map",
+    "main.19f5ac43.css.map": "/react-basics/static/css/main.19f5ac43.css.map",
+    "main.2196e750.js.map": "/react-basics/static/js/main.2196e750.js.map",
     "787.10cefd62.chunk.js.map": "/react-basics/static/js/787.10cefd62.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c29e1bdc.css",
-    "static/js/main.b3211834.js"
+    "static/css/main.19f5ac43.css",
+    "static/js/main.2196e750.js"
   ]
 }
