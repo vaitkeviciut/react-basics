@@ -14,7 +14,7 @@ const BackButton = () => {
         </div>
         <div className='name-and-link-wrapper'>
             <h3 className='content-my-name'>Indrė Vaitkevičiūtė</h3>
-            <a className='link-to-github-portfolio' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components' target='_blank' rel="noreferrer" >GitHub</a>
+            <a className='link-to-github-portfolio' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components' target='_blank' rel='noreferrer' >GitHub</a>
         </div>
     </div>
   )

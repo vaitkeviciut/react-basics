@@ -20,7 +20,6 @@ const ContentNav = () => {
   return (
     <div>
       <ul className='route-list'>
-
         <li className='route-list-item'>
           <NavLink className='route-list-item-link' to='/studentform'><img className='project-pic' src={image7} alt={image7} />
           <h2 className='contentnav-project-title'>Student Form Page</h2>
