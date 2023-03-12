@@ -13,6 +13,7 @@ import image8 from './images/bored.jpg'
 import image9 from './images/random.jpg'
 import image10 from './images/chuck.jpg'
 import image11 from './images/dogs.jpg'
+import image12 from './images/api-project.jpg'
 
 
 const ContentNav = () => {
@@ -39,10 +40,10 @@ const ContentNav = () => {
           <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/CodeAcademyPage' target='_blank'>GitHub</a>
         </li>
         <li className='route-list-item'>
-          <NavLink className='route-list-item-link' to='/contacts'><img className='project-pic' src={image2} alt={image2} />
-          <h2 className='contentnav-project-title'>Contacts - Project</h2>
-          </NavLink>
-          <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/Contacts' target='_blank'>GitHub</a>
+          <a className='route-list-item-link' href='https://vaitkeviciut.github.io/2023-02-13-new-api/' target='_blank' ><img className='project-pic' src={image12} alt={image12} />
+          <h2 className='contentnav-project-title'>API Project Page (API)</h2>
+          </a>
+          <a className='project-github-link' href='https://github.com/vaitkeviciut/2023-02-13-new-api' target='_blank'>GitHub</a>
         </li>
         <li className='route-list-item'>
           <NavLink className='route-list-item-link' to='/counter'><img className='project-pic' src={image3} alt={image3} />
@@ -50,6 +51,13 @@ const ContentNav = () => {
           </NavLink>
           <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/CounterPage' target='_blank'>GitHub</a>
         </li>
+        <li className='route-list-item'>
+          <NavLink className='route-list-item-link' to='/contacts'><img className='project-pic' src={image2} alt={image2} />
+          <h2 className='contentnav-project-title'>Contacts - Project</h2>
+          </NavLink>
+          <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/Contacts' target='_blank'>GitHub</a>
+        </li>
+        
         <li className='route-list-item'>
           <NavLink className='route-list-item-link' to='/shoppinglistpage'><img className='project-pic' src={image5} alt={image5} />
           <h2 className='contentnav-project-title'>Shopping List</h2>
@@ -62,6 +70,12 @@ const ContentNav = () => {
           </NavLink>
           <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/ToDoListPage' target='_blank'>GitHub</a>
         </li>
+        <li className='route-list-item'>
+          <NavLink className='route-list-item-link' to='/apirandomuser'><img className='project-pic' src={image9} alt={image9} />
+          <h2 className='contentnav-project-title'>Random User Generator (API)</h2>
+          </NavLink>
+          <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/ApiRandomUserPage' target='_blank'>GitHub</a>
+        </li>
         
         <li className='route-list-item'>
           <NavLink className='route-list-item-link' to='/apiactivities'><img className='project-pic' src={image8} alt={image8} />
@@ -69,11 +83,12 @@ const ContentNav = () => {
           </NavLink>
           <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/ApiActivitiesPage' target='_blank'>GitHub</a>
         </li>
+        
         <li className='route-list-item'>
-          <NavLink className='route-list-item-link' to='/apirandomuser'><img className='project-pic' src={image9} alt={image9} />
-          <h2 className='contentnav-project-title'>Random User Generator (API)</h2>
+          <NavLink className='route-list-item-link' to='/apidogs'><img className='project-pic' src={image11} alt={image11} />
+          <h2 className='contentnav-project-title'>Dogs Photos (API)</h2>
           </NavLink>
-          <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/ApiRandomUserPage' target='_blank'>GitHub</a>
+          <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/ApiDogsPage' target='_blank'>GitHub</a>
         </li>
         <li className='route-list-item'>
           <NavLink className='route-list-item-link' to='/apichuck'><img className='project-pic' src={image10} alt={image10} />
@@ -81,12 +96,7 @@ const ContentNav = () => {
           </NavLink>
           <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/ApiChuckPage' target='_blank'>GitHub</a>
         </li>
-        <li className='route-list-item'>
-          <NavLink className='route-list-item-link' to='/apidogs'><img className='project-pic' src={image11} alt={image11} />
-          <h2 className='contentnav-project-title'>Dogs Photos (API)</h2>
-          </NavLink>
-          <a className='project-github-link' href='https://github.com/vaitkeviciut/react-basics/tree/master/src/components/ApiDogsPage' target='_blank'>GitHub</a>
-        </li>
+        
       </ul>
     </div>
           
